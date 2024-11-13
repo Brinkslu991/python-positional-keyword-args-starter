@@ -1,5 +1,5 @@
-# Student name
-# Current date
+# Lucas Brinks
+# 11/13/24
 # Practice: Positional & Keyword Arguments in Python
 
 
@@ -11,19 +11,28 @@
 # Greet The User
 # Write a function that takes two parameters -- first name and age
 # Use an f-string to welcome the user by first name and to display his/her age
-
+# def greet_user(first_name, age):
+#     print(f'Welcome {first_name}')
+#     print(f'you are {age} years old.')
+# greet_user('Lucas', 16)
+# print(greet_user)
 
 # Area of a Rectangle
 # Write a function to calculate the area (in square feet) of a rectangle
 # Your two parameters will be length and width
 # The print statement in the function should display the length, width and area (in square feet) of your rectangle
-
+def rect_clac(length, width):
+    area = length * width
+    print(f'Your room hass an area of {area} square feet')
+rect_clac(15,21)
 # Sum of Numbers
 # Write a function that finds the sum of three numbers
 # Your three parameters will be num1, num2, and num3
 # The print statement in the function should display the sum of the three numbers
-
-
+def sum_numbers(num1,num2,num3):
+    add = num1 + num2 + num3
+    print(f'The sum of your numbers are {add}')
+sum_numbers(19,83,7)
 
 # KEYWORD ARGUMENTS
 # Create the three functions outlined below
@@ -34,10 +43,18 @@
 # Write a function that greets the user by title, first name and last name
 # Examples of titles include: Mr., Ms., Mrs. and Dr.
 # When calling your function, change the order of your keyword arguments so that they don't match the order of your function parameters
-
+def greet_title(title,fname,lname):
+    print(f'Hello {title} {fname} {lname}, how are you doing today?')
+greet_title(lname='Phillups',fname='Josh',title='Mr.')
 # Describe Your Pet
 # Write a function that says what type of pet you have and what your pet's name is
 # Your function parameters will be pet_type and pet_name
-
+def pet(pet_type,pet_name):
+    print(f'I have a {pet_type} and their name is {pet_name}.')
+pet(pet_name='Hiccup',pet_type='Black and white Dog')
 # Updated Function
 # Choose any ONE of the first three functions from this project and rewrite it below using keyword arguments
+def greet_user(first_name, age):
+    print(f'Hello there {first_name}')
+    print(f'You are {age} years old')
+greet_user(age=16,first_name='Lucas')
